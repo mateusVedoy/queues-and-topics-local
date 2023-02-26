@@ -9,4 +9,6 @@ services:
     - 9325:9325
     volumes:
     - ./custom/custom.conf:/opt/custom/elasticmq.conf
+    - "/etc/timezone:/etc/timezone:ro"
+    - "/etc/localtime:/etc/localtime:ro"
      
